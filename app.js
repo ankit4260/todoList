@@ -20,13 +20,13 @@ const itemSchema= new mongoose.Schema({
 const Item=mongoose.model("Item",itemSchema);
 
 const item1=new Item({
-        name:"Morning walk"
+        name:"Morning Walk"
     });
     const item2=new Item({
-        name:"tea"
+        name:"Gym Workout"
     });
     const item3=new Item({
-        name:"money"
+        name:"Study DSA"
     });
     const defaultItem=[item1,item2,item3];
 
