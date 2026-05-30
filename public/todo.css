@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-image: url(OIP.jpg);
+    background-size: cover ;
+    
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 20rem;
+    height:3rem;
+    margin: 50px auto 50px auto;
+    border-radius: 0.5rem;
+}
+
+ul {
+    padding: 0;
+    width:20rem ;
+    margin: 5px auto 0px auto;;
+    list-style: none;
+    background-color:white ;
+    overflow: hidden;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+li {
+    gap: 1rem;
+    padding-left: 10px;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    height: 4rem;
+}
+
+.inp {
+    font-size: large;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    width: 17rem;
+    height: 4rem;
+}
+
+.btn {
+    font-size: 2rem;
+    background-color: blueviolet;
+    margin-right: 10px;
+    border: 0;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.lower {
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    align-items: center;
+    background-color: white;
+    margin: 0px auto 0px auto;
+    width: 20rem;
+    display: flex;
+    overflow: hidden;
+}
+
+form {
+    margin: 0;
+}
+
+.inp:focus{
+    outline: none;
+}
+
+.done {
+    text-decoration: line-through;
+}

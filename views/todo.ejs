@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <h1><%= day %></h1>
+    <div class="sect">
+        <ul>
+        <% result.forEach(item=>{%>
+        <form action="/delete" method="post" class="ckb">
+                <li>
+                    <input type="checkbox" class="check" name="ckb">
+                    <input type="hidden" name="id" value="<%=item._id%>">
+                    <input type="hidden" name="list" value="<%=day %>">
+                    <span class="text" name="item"><%=item.name%></span>
+                </li>
+        </form>
+        <% }) %>
+        </ul>
+        
+    </ul>
+    <form action="/" method="post">
+        <div class="lower">
+        <input class="inp" type="text" name="newitem" placeholder="New Item">
+        <button class="btn" type="submit" name="list" value="<%=day %>">+</button>
+        </div>
+    </form>
+    </div>
+    <script src="/script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
